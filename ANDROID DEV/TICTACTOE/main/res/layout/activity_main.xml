@@ -6,39 +6,72 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <VideoView
-        android:id="@+id/vid_view"
-        android:layout_width="wrap_content"
-        android:layout_height="207dp"
+    <EditText
+        android:id="@+id/mainString"
+        android:layout_width="223dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:ems="10"
+        android:hint="Enter Your sentence..."
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="231dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="12dp"
-        android:paddingLeft="15dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:text="Video Player"
-        android:textSize="24sp"
+
+    <EditText
+        android:id="@+id/stra"
+        android:layout_width="267dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:hint="Word you wanna replace \?"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintHorizontal_bias="0.631"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vid_view" />
+        app:layout_constraintTop_toBottomOf="@+id/mainString" />
+
+    <EditText
+        android:id="@+id/strb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:hint="Replace with ?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stra" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="221dp"
-        android:layout_height="23dp"
-        android:layout_marginTop="96dp"
-        android:paddingLeft="60dp"
-        android:paddingRight="55dp"
-        android:text="Media Player"
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="177dp"
+        android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/strb" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
